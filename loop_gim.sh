@@ -5,12 +5,14 @@ rm auto.log
 date >> auto.log
 
 i="0"
-while [ $i -lt 50 ]
+while [ $i -lt 10000 ]
 do 
 
 echo Loop $i
+echo @@@ Loop $i : rmmod> /dev/kmsg
 rmmod gim
-insmod gim.ko
+echo @@@ Loop $i : insmod> /dev/kmsg
+insmod ./gim.ko
 
 echo loop $i >> auto.log
 lspci |grep 73a >> auto.log
