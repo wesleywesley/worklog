@@ -1,0 +1,12 @@
+set from = "wesley.sheng@amd.com"
+set realname = "Wesley Sheng"
+ 
+set smtp_url = "smtp://weisheng@amd.com@smtp.office365.com:587"
+set imap_user = "weisheng@amd.com"
+
+set folder = "imaps://outlook.office365.com:993"
+set spoolfile = "+INBOX/patch"
+ 
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
